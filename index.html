@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+</head>
+
+<body>
+    <div class="section container column is-6">
+        <div class="card">
+            <div class="card-image">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6" alt="Placeholder image" />
+                </figure>
+                <p class="card-header-title">Ping Pong Score Keeper</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-content">
+                <p id="scoretitle" class="title is-size-3">0 to 0</p>
+                <p class="subtitle">Use the buttons below to keep score</p>
+                <label for="playto" class="label is-large is-inline">Playing To</label>
+                <div class="select is-rounded">
+                    <select name="playingto" id="playingto">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card">
+                <footer class="card-footer">
+                    <button id="player1" class="card-footer-item button is-primary">+1 Player One</button>
+                    <button id="player2" class="card-footer-item button is-link">+1 Player Two</button>
+                    <button id="reset" class="card-footer-item button is-danger is-active">Reset</button>
+                </footer>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
